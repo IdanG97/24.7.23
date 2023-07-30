@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sum Equations</title>
+</head>
+
+<body>
+    <script>
+        function findSumEquation() {
+
+            var a = parseFloat(prompt("Enter the first number (a):"));
+            var b = parseFloat(prompt("Enter the second number (b):"));
+            var c = parseFloat(prompt("Enter the third number (c):"));
+
+
+            if (a + b === c) {
+                document.write("The sum equation is: " + a + " + " + b + " = " + c);
+            } else if (a + c === b) {
+                document.write("The sum equation is: " + a + " + " + c + " = " + b);
+            } else if (b + c === a) {
+                document.write("The sum equation is: " + b + " + " + c + " = " + a);
+            } else {
+                document.write("There is no sum equation with the given numbers.");
+            }
+        }
+
+        findSumEquation();
+    </script>
+</body>
+
+</html>
